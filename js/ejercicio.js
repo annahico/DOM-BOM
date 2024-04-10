@@ -19,11 +19,21 @@ const movies = [
     },
 ];
 
+//variante 1
 
-const películas = ["Bob", "Juan", "Anna", "Marta", "Carlos", "Susana"];
+let moviesLista = "";
 
-usuarios.forEach((usuario) => {
+for (const movie of movies) {
+    moviesLista += `<li>${movie.title} (+${movie.age})</li>`;
+}
+
+lista.innerHTML = movieLista;
+
+//variante 2
+
+movies-array.forEach(movie => {
     const item = document.createElement("li");
-    item.textContent = usuario;
+    item.textContent = `${movie.title} (+${movie.age})`;
     lista.appendChild(item);
+
 });
