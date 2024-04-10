@@ -8,5 +8,7 @@ for (let i = 0; i < grids.length; i++) {
     element.style.backgroundColor = "yellow";
 }
 
-const unico = document.getElementById("unico"); //aqui ELEMENT es en singular porque solo se puede poner un ID en HTML
+//Por ID
+// const unico = document.getElementById("unico"); //aqui ELEMENT es en singular porque solo se puede poner un ID en HTML
+const unico = document.querySelector("#unico");
 unico.style.backgroundColor = "green";
